@@ -7,7 +7,25 @@
 		<key>SwiftAdvance.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SwiftAdvanceUnitTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E44DE0BF1F32FCDF0008D95D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E44DE0D01F32FF990008D95D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
