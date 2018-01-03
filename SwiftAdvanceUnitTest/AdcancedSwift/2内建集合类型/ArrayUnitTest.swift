@@ -27,6 +27,11 @@ extension Sequence {
         }
     }
     
+    /// 所有元素都满足某个条件
+    func all(matching predicate: (Iterator.Element) -> Bool) -> Bool {
+        return !contains { element in !predicate(element) }
+    }
+    
 }
 
 
@@ -55,7 +60,7 @@ class ArrayUnitTest: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testSlice() {
+    func testUsage() {
         let array = [1,2,3]
         var result = [Int]()
         // 迭代数组 for x in array
@@ -128,8 +133,54 @@ class ArrayUnitTest: XCTestCase {
         XCTAssert(minusResult == [9,7,4,0])
     }
     
-    func testFlatMap() {
+    func testFilter() {
+        let nums = [1,3,5,2,4,6]
+        let result = nums.filter { num in num % 2 == 0 }
+        XCTAssert(result == [2,4,6])
         
+        
+    }
+    
+    func testAll() {
+        let nums = [1,3,5,2,4,6]
+        let eventNum = nums.filter { num in num % 2 == 0 }
+        XCTAssert(eventNum.all { $0 % 2 == 0 })
+    }
+    
+    func testReduce() {
+        let nums = [1,3,5,2,4,6]
+        let sum = nums.reduce(0, +)
+        XCTAssert(sum == 21)
+        XCTAssert(sum == nums.reduce(0) { total, num in total + num } )
+    }
+    
+    func testFlatMap() {
+        // 1.map和joined函数组合为一个操作
+        let nums = [1,3,5,2,4,6]
+        let mapJoin = Array((nums.map { [$0,$0] }).joined())
+        XCTAssert(mapJoin == [1,1,3,3,5,5,2,2,4,4,6,6] && mapJoin == nums.flatMap { [$0,$0] })
+        
+        // 2.将不同数组里的元素合并
+        let suits = ["♥️","♠️","♦️","♣️"]
+        let ranks = ["J","Q","K","A"];
+        let result = suits.flatMap { suit in
+            ranks.map { rank in
+                (suit, rank)
+            }
+        }
+        XCTAssert(result.count == 16 && result.last! == ("♣️","A"))
+    }
+    
+    func testSlice() {
+        // 下标还可以获取某个范围的元素
+        var nums = [1,3,5,2,4,6]
+        let slice = nums[1..<nums.endIndex]
+        XCTAssert(slice == [3,5,2,4,6])
+        let sliceType = type(of: slice)
+        XCTAssert(sliceType == type(of: ArraySlice<Int>()))
+        nums[nums.endIndex-1] = 7
+        XCTAssert(nums == [1,3,5,2,4,7])
+        XCTAssert(slice == [3,5,2,4,6])
     }
 
 }
