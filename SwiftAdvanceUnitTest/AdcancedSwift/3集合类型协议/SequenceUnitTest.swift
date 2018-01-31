@@ -8,8 +8,30 @@
 
 import XCTest
 
-class IteratorUnitTest: XCTestCase {
+class SequenceUnitTest: XCTestCase {
 
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+    }
+    
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
+        }
+    }
+    
     /// 无限序列的迭代器
     struct ConstantIterator: IteratorProtocol {
         typealias Element = Int
@@ -112,13 +134,15 @@ class IteratorUnitTest: XCTestCase {
         XCTAssert(result == [0,1,1,2,3])
     }
     
+    let randomNumber = sequence(first: 100) { (pre: UInt32) in
+        let newValue = arc4random_uniform(pre)
+        guard newValue > 0 else { return nil }
+        
+        return newValue
+    }
+    
     func testSequenceFuc() {
-        let randomNumber = sequence(first: 100) { (pre: UInt32) in
-            let newValue = arc4random_uniform(pre)
-            guard newValue > 0 else { return nil }
-            
-            return newValue
-        }
+       
         let result = Array(randomNumber)
         XCTAssert(result.first == 100 && result.last! > 0)
         
@@ -134,26 +158,45 @@ class IteratorUnitTest: XCTestCase {
         
     }
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testReForIn() {
+        
+        
+        //序列的多次for in循环不能保证循环迭代或者重头开始，存在可消耗序列
+        let numberedStdIn = randomNumber.enumerated()
+        var result1: [UInt32] = []
+        for (_, line) in numberedStdIn {
+            result1.append(line)
+        }
+
+        var result2: [UInt32] = []
+        for (_, line) in numberedStdIn {
+            result2.append(line)
+        }
+        
+        XCTAssert(result1 != result2)
+
+//        myscr
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+   
+    func testSubSequence() {
+        XCTAssert([1,2,3,5,7,8,3,2,1].headMirrorsTail(3))
     }
 
 }
+
+/// 编译器没有循环协议约束和关联类型中的where语句支持。需要自己添加约束条件
+extension Sequence
+    where Iterator.Element: Equatable,
+    SubSequence: Sequence,
+    SubSequence.Iterator.Element == Iterator.Element
+{
+    func headMirrorsTail(_ n: Int) -> Bool {
+        let head = prefix(n)
+        let tail = suffix(n).reversed()
+        return head.elementsEqual(tail)
+    }
+    
+}
+
+
