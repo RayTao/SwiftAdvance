@@ -11,13 +11,14 @@
 @implementation CBridging
 
 + (int)my_scanf:(NSString *)input {
-    const char *text = [input cStringUsingEncoding:NSUTF8StringEncoding];
+    char *text = (char *)[input cStringUsingEncoding:NSUTF8StringEncoding];
     int result = scanf("%s",text);
     return result;
 }
 
 + (void)my_printf:(NSString *)output {
-    printf([output cStringUsingEncoding:NSUTF8StringEncoding]);
+    char *text = (char *)[output cStringUsingEncoding:NSUTF8StringEncoding];
+    printf("%s",text);
 }
 
 @end
