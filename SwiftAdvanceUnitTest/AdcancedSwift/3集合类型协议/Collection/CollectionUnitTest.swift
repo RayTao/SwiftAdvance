@@ -94,7 +94,7 @@ class CollectionUnitTest: XCTestCase {
     func testListCollecion() {
         var list: List = ["one", "two", "threee"]
         XCTAssert(list.first == Optional("one"))
-//        XCTAssert(list.index(of: "two") == ListIndex("2")))
+//        XCTAssert(list.index(of: "two") == ListIndex(node: ,tag:1)))
         XCTAssert(list.count == 3)
         XCTAssert(list.pop() == "one")
         XCTAssert(list.count == 2)
@@ -103,5 +103,49 @@ class CollectionUnitTest: XCTestCase {
         _ = list.pop()
         XCTAssert(list.count == 0)
     }
+    
+    func testSlice() {
+        let numbers = [1,2,3]
+        let sliceArray = Array(PrefixIterator(numbers))
+        XCTAssert(sliceArray[0].first == 1)
+        
+    }
+    
+    func testReversed() {
+        let list: List = ["red", "green", "blue"]
+        let reversed = list.reversed()
+        XCTAssert(reversed as Any is List<String>)
+        let reversedArray: [String] = list.reversed()
+        XCTAssert(reversedArray as Any is [String])
+        XCTAssert(list.reversed().elementsEqual(list.reversed() as [String]))
+    }
+    
+    /// MutableCollection允许改变集合中的元素值 但是不允许改变集合的长度或者元素顺序
+    /// Dictionary和Set是无序的集合，通过下标赋值时对应元素的索引被改变了，所以不满足MutableCollection
+    func testMutable() {
+        var numbers = [1,2,3,4,5]
+        numbers.swapAt(0, 1)
+        XCTAssert(numbers[0] == 2)
+        
+        var playlist: FIFOQueue = ["hello", "you", "world"]
+        playlist.swapAt(0, 1)
+        XCTAssert(playlist.first == "you")
+    }
+    
+    func testRangeReplaceable() {
+        var array = [1,2,3,4,5]
+        XCTAssert(array.removeFirst() == 1 && array == [2,3,4,5])
+        array.replaceSubrange(1...2, with: [233])
+        XCTAssert(array == [2,233,5])
+        
+        var numbers: FIFOQueue = [233,177,666]
+        numbers.append(2)
+        XCTAssert(Array(numbers) == [233,177,666,2])
+        numbers.replaceSubrange(1...2, with: [233])
+        XCTAssert(Array(numbers) == [233,233,2])
+
+        
+    }
+    
     
 }

@@ -12,9 +12,9 @@
 		E44307352029F347005D7D90 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44307342029F347005D7D90 /* Stack.swift */; };
 		E44DE0C41F32FCE00008D95D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DE0C31F32FCE00008D95D /* main.swift */; };
 		E44DE0CC1F32FD580008D95D /* RTNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DE0CB1F32FD580008D95D /* RTNotification.swift */; };
-		E44DE0D41F32FF990008D95D /* SwiftAdvanceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DE0D31F32FF990008D95D /* SwiftAdvanceUnitTest.swift */; };
 		E44DE0DA1F32FFC40008D95D /* RTNotificationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DE0D91F32FFC40008D95D /* RTNotificationTest.swift */; };
 		E44DE0DB1F32FFCC0008D95D /* RTNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DE0CB1F32FD580008D95D /* RTNotification.swift */; };
+		E462A77620301FAD004F3067 /* OverloadUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A77520301FAD004F3067 /* OverloadUnitTest.swift */; };
 		E4642C1A202174900041E8FF /* CBridging.m in Sources */ = {isa = PBXBuildFile; fileRef = E4642C19202174900041E8FF /* CBridging.m */; };
 		E4642C1C202192940041E8FF /* SequenceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4642C1B202192940041E8FF /* SequenceUnitTest.swift */; };
 		E4642C1E2021AB450041E8FF /* CollectionUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4642C1D2021AB450041E8FF /* CollectionUnitTest.swift */; };
@@ -26,6 +26,8 @@
 		E4AFD27A1F45A98B0087F79E /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AFD2791F45A98B0087F79E /* Media.swift */; };
 		E4AFD27B1F45A9CA0087F79E /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AFD2791F45A98B0087F79E /* Media.swift */; };
 		E4AFD27D1F45A9FB0087F79E /* PatternMatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AFD27C1F45A9FB0087F79E /* PatternMatchTest.swift */; };
+		E4CA5CB6202AEC970086F98F /* CodableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA5CB5202AEC970086F98F /* CodableTest.swift */; };
+		E4DE05D1202F3F950056838D /* PrefixIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE05D0202F3F950056838D /* PrefixIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,9 +50,9 @@
 		E44DE0C31F32FCE00008D95D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E44DE0CB1F32FD580008D95D /* RTNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTNotification.swift; sourceTree = "<group>"; };
 		E44DE0D11F32FF990008D95D /* SwiftAdvanceUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAdvanceUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E44DE0D31F32FF990008D95D /* SwiftAdvanceUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAdvanceUnitTest.swift; sourceTree = "<group>"; };
 		E44DE0D51F32FF990008D95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44DE0D91F32FFC40008D95D /* RTNotificationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTNotificationTest.swift; sourceTree = "<group>"; };
+		E462A77520301FAD004F3067 /* OverloadUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverloadUnitTest.swift; sourceTree = "<group>"; };
 		E4642C142021743E0041E8FF /* SwiftAdvanceUnitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAdvanceUnitTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		E4642C18202174900041E8FF /* CBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBridging.h; sourceTree = "<group>"; };
 		E4642C19202174900041E8FF /* CBridging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBridging.m; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		E49CD0D91F7F4C0A0025D1A1 /* MutiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutiProtocol.swift; sourceTree = "<group>"; };
 		E4AFD2791F45A98B0087F79E /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		E4AFD27C1F45A9FB0087F79E /* PatternMatchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatchTest.swift; sourceTree = "<group>"; };
+		E4CA5CB5202AEC970086F98F /* CodableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTest.swift; sourceTree = "<group>"; };
+		E4DE05D0202F3F950056838D /* PrefixIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +137,20 @@
 			isa = PBXGroup;
 			children = (
 				E4868F7F1FFA8A1C00D63D1A /* AdcancedSwift */,
-				E44DE0D31F32FF990008D95D /* SwiftAdvanceUnitTest.swift */,
 				E44DE0D91F32FFC40008D95D /* RTNotificationTest.swift */,
 				E4AFD27C1F45A9FB0087F79E /* PatternMatchTest.swift */,
+				E4CA5CB5202AEC970086F98F /* CodableTest.swift */,
 				E44DE0D51F32FF990008D95D /* Info.plist */,
 			);
 			path = SwiftAdvanceUnitTest;
+			sourceTree = "<group>";
+		};
+		E462A77220301F60004F3067 /* 9泛型 */ = {
+			isa = PBXGroup;
+			children = (
+				E462A77520301FAD004F3067 /* OverloadUnitTest.swift */,
+			);
+			path = "9泛型";
 			sourceTree = "<group>";
 		};
 		E47F59B720260974009C5ECA /* Collection */ = {
@@ -148,6 +160,7 @@
 				E47F59BA202609D4009C5ECA /* List.swift */,
 				E44307342029F347005D7D90 /* Stack.swift */,
 				E47F59B820260990009C5ECA /* Queue.swift */,
+				E4DE05D0202F3F950056838D /* PrefixIterator.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -157,6 +170,7 @@
 			children = (
 				E4868F801FFA8A3300D63D1A /* 2内建集合类型 */,
 				E4F45605201F613B00BAA926 /* 3集合类型协议 */,
+				E462A77220301F60004F3067 /* 9泛型 */,
 			);
 			path = AdcancedSwift;
 			sourceTree = "<group>";
@@ -303,6 +317,7 @@
 			files = (
 				E404B5E420061AA40058AC54 /* SetUnitTest.swift in Sources */,
 				E478395F1FFB935B002F14EC /* DictionaryUnitTest.swift in Sources */,
+				E4DE05D1202F3F950056838D /* PrefixIterator.swift in Sources */,
 				E44307352029F347005D7D90 /* Stack.swift in Sources */,
 				E44DE0DA1F32FFC40008D95D /* RTNotificationTest.swift in Sources */,
 				E4642C1C202192940041E8FF /* SequenceUnitTest.swift in Sources */,
@@ -311,9 +326,10 @@
 				E44DE0DB1F32FFCC0008D95D /* RTNotification.swift in Sources */,
 				E4AFD27B1F45A9CA0087F79E /* Media.swift in Sources */,
 				E47F59B920260990009C5ECA /* Queue.swift in Sources */,
-				E44DE0D41F32FF990008D95D /* SwiftAdvanceUnitTest.swift in Sources */,
 				E4642C1E2021AB450041E8FF /* CollectionUnitTest.swift in Sources */,
 				E4AFD27D1F45A9FB0087F79E /* PatternMatchTest.swift in Sources */,
+				E462A77620301FAD004F3067 /* OverloadUnitTest.swift in Sources */,
+				E4CA5CB6202AEC970086F98F /* CodableTest.swift in Sources */,
 				E4642C1A202174900041E8FF /* CBridging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

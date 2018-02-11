@@ -40,7 +40,17 @@ struct FIFOQueue<Element>: Queue {
     }
 }
 
-extension FIFOQueue: Collection {
+extension FIFOQueue: RangeReplaceableCollection {
+    mutating func replaceSubrange<C: Collection>(_ subrange: Range<Int>, with newElements: C)
+        where C.Iterator.Element == Element
+    {
+        right = left.reversed() + right
+        left.removeAll()
+        right.replaceSubrange(subrange, with: newElements)
+    }
+}
+
+extension FIFOQueue: MutableCollection {
     
     public var startIndex: Int { return 0 }
     public var endIndex: Int { return left.count + right.count }
@@ -51,12 +61,23 @@ extension FIFOQueue: Collection {
     }
     
     public subscript(position: Int) -> Element {
-        precondition((0..<endIndex).contains(position), "Index out of bounds")
-        if position < left.endIndex {
-            return left[left.count - position - 1]
-        } else {
-            return right[position - left.count]
+        get {
+            precondition((0..<endIndex).contains(position), "Index out of bounds")
+            if position < left.endIndex {
+                return left[left.count - position - 1]
+            } else {
+                return right[position - left.count]
+            }
         }
+        set {
+            precondition((0..<endIndex).contains(position), "Index out of bounds")
+            if position < left.endIndex {
+                left[left.count - position - 1] = newValue
+            } else {
+                return right[position - left.count] = newValue
+            }
+        }
+        
     }
     
     /// 提供Indices类型,让它不需要保持对集合的引用,可以提升性能。

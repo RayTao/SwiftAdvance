@@ -93,6 +93,17 @@ extension List: IteratorProtocol, Sequence {
     }
 }
 
+extension List {
+    public func reversed() -> List<Element> {
+        let reversedNodes: ListNode<Element> = self.reduce(.end) {
+            $0.cons($1)
+        }
+        return List(
+            startIndex: ListIndex(node: reversedNodes, tag: self.count),
+            endIndex: ListIndex(node: .end, tag: 0))
+    }
+}
+
 extension List: CustomStringConvertible {
     public var description: String {
         let element = self.map { String(describing: $0) }.joined(separator: ", ")
