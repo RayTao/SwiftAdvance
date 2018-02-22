@@ -20,6 +20,7 @@
 		E4642C1A202174900041E8FF /* CBridging.m in Sources */ = {isa = PBXBuildFile; fileRef = E4642C19202174900041E8FF /* CBridging.m */; };
 		E4642C1C202192940041E8FF /* SequenceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4642C1B202192940041E8FF /* SequenceUnitTest.swift */; };
 		E4642C1E2021AB450041E8FF /* CollectionUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4642C1D2021AB450041E8FF /* CollectionUnitTest.swift */; };
+		E46BB62D20317FD300F8B815 /* FisherYates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BB62C20317FD300F8B815 /* FisherYates.swift */; };
 		E478395F1FFB935B002F14EC /* DictionaryUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E478395E1FFB935B002F14EC /* DictionaryUnitTest.swift */; };
 		E47F59B920260990009C5ECA /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F59B820260990009C5ECA /* Queue.swift */; };
 		E47F59BB202609D4009C5ECA /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F59BA202609D4009C5ECA /* List.swift */; };
@@ -28,6 +29,9 @@
 		E4AFD27A1F45A98B0087F79E /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AFD2791F45A98B0087F79E /* Media.swift */; };
 		E4AFD27B1F45A9CA0087F79E /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AFD2791F45A98B0087F79E /* Media.swift */; };
 		E4AFD27D1F45A9FB0087F79E /* PatternMatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AFD27C1F45A9FB0087F79E /* PatternMatchTest.swift */; };
+		E4B340AE203E962C00896348 /* IndexSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B340AD203E962C00896348 /* IndexSearch.swift */; };
+		E4B340B1203EC1DB00896348 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B340B0203EC1DB00896348 /* Protocol.swift */; };
+		E4B340B3203EC1F200896348 /* ProtocolUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B340B2203EC1F200896348 /* ProtocolUnitTest.swift */; };
 		E4CA5CB6202AEC970086F98F /* CodableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA5CB5202AEC970086F98F /* CodableTest.swift */; };
 		E4DE05D1202F3F950056838D /* PrefixIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE05D0202F3F950056838D /* PrefixIterator.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +66,7 @@
 		E4642C19202174900041E8FF /* CBridging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBridging.m; sourceTree = "<group>"; };
 		E4642C1B202192940041E8FF /* SequenceUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceUnitTest.swift; sourceTree = "<group>"; };
 		E4642C1D2021AB450041E8FF /* CollectionUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionUnitTest.swift; sourceTree = "<group>"; };
+		E46BB62C20317FD300F8B815 /* FisherYates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisherYates.swift; sourceTree = "<group>"; };
 		E478395E1FFB935B002F14EC /* DictionaryUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryUnitTest.swift; sourceTree = "<group>"; };
 		E47F59B820260990009C5ECA /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		E47F59BA202609D4009C5ECA /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
@@ -69,6 +74,9 @@
 		E49CD0D91F7F4C0A0025D1A1 /* MutiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutiProtocol.swift; sourceTree = "<group>"; };
 		E4AFD2791F45A98B0087F79E /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		E4AFD27C1F45A9FB0087F79E /* PatternMatchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatchTest.swift; sourceTree = "<group>"; };
+		E4B340AD203E962C00896348 /* IndexSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexSearch.swift; sourceTree = "<group>"; };
+		E4B340B0203EC1DB00896348 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		E4B340B2203EC1F200896348 /* ProtocolUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolUnitTest.swift; sourceTree = "<group>"; };
 		E4CA5CB5202AEC970086F98F /* CodableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTest.swift; sourceTree = "<group>"; };
 		E4DE05D0202F3F950056838D /* PrefixIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +163,8 @@
 				E462A77520301FAD004F3067 /* OverloadUnitTest.swift */,
 				E4359CB2203088330055B9E8 /* CollectionGenericUnitTest.swift */,
 				E4359CB420308EFD0055B9E8 /* BinarySearch.swift */,
+				E46BB62C20317FD300F8B815 /* FisherYates.swift */,
+				E4B340AD203E962C00896348 /* IndexSearch.swift */,
 			);
 			path = "9泛型";
 			sourceTree = "<group>";
@@ -177,6 +187,7 @@
 				E4868F801FFA8A3300D63D1A /* 2内建集合类型 */,
 				E4F45605201F613B00BAA926 /* 3集合类型协议 */,
 				E462A77220301F60004F3067 /* 9泛型 */,
+				E4B340AF203EC1B700896348 /* 10协议 */,
 			);
 			path = AdcancedSwift;
 			sourceTree = "<group>";
@@ -205,6 +216,15 @@
 				E4AFD2791F45A98B0087F79E /* Media.swift */,
 			);
 			path = "匹配模式case简化逻辑";
+			sourceTree = "<group>";
+		};
+		E4B340AF203EC1B700896348 /* 10协议 */ = {
+			isa = PBXGroup;
+			children = (
+				E4B340B2203EC1F200896348 /* ProtocolUnitTest.swift */,
+				E4B340B0203EC1DB00896348 /* Protocol.swift */,
+			);
+			path = "10协议";
 			sourceTree = "<group>";
 		};
 		E4F45605201F613B00BAA926 /* 3集合类型协议 */ = {
@@ -323,11 +343,13 @@
 			files = (
 				E404B5E420061AA40058AC54 /* SetUnitTest.swift in Sources */,
 				E478395F1FFB935B002F14EC /* DictionaryUnitTest.swift in Sources */,
+				E4B340AE203E962C00896348 /* IndexSearch.swift in Sources */,
 				E4359CB520308EFD0055B9E8 /* BinarySearch.swift in Sources */,
 				E4359CB3203088330055B9E8 /* CollectionGenericUnitTest.swift in Sources */,
 				E4DE05D1202F3F950056838D /* PrefixIterator.swift in Sources */,
 				E44307352029F347005D7D90 /* Stack.swift in Sources */,
 				E44DE0DA1F32FFC40008D95D /* RTNotificationTest.swift in Sources */,
+				E46BB62D20317FD300F8B815 /* FisherYates.swift in Sources */,
 				E4642C1C202192940041E8FF /* SequenceUnitTest.swift in Sources */,
 				E47F59BB202609D4009C5ECA /* List.swift in Sources */,
 				E4868F821FFA8B9A00D63D1A /* ArrayUnitTest.swift in Sources */,
@@ -335,6 +357,8 @@
 				E4AFD27B1F45A9CA0087F79E /* Media.swift in Sources */,
 				E47F59B920260990009C5ECA /* Queue.swift in Sources */,
 				E4642C1E2021AB450041E8FF /* CollectionUnitTest.swift in Sources */,
+				E4B340B1203EC1DB00896348 /* Protocol.swift in Sources */,
+				E4B340B3203EC1F200896348 /* ProtocolUnitTest.swift in Sources */,
 				E4AFD27D1F45A9FB0087F79E /* PatternMatchTest.swift in Sources */,
 				E462A77620301FAD004F3067 /* OverloadUnitTest.swift in Sources */,
 				E4CA5CB6202AEC970086F98F /* CodableTest.swift in Sources */,

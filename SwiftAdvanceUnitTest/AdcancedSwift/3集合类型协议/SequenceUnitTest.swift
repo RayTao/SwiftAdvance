@@ -34,7 +34,7 @@ class SequenceUnitTest: XCTestCase {
     
     /// 无限序列的迭代器
     struct ConstantIterator: IteratorProtocol {
-        typealias Element = Int
+//        typealias Element = Int
         mutating func next() -> Int? {
             return 1
         }
@@ -134,8 +134,8 @@ class SequenceUnitTest: XCTestCase {
         XCTAssert(result == [0,1,1,2,3])
     }
     
-    let randomNumber = sequence(first: 100) { (pre: UInt32) in
-        let newValue = arc4random_uniform(pre)
+    let randomNumber = sequence(first: 100) { (pre: Int) in
+        let newValue = Int(arc4random_uniform(UInt32(pre)))
         guard newValue > 0 else { return nil }
         
         return newValue
@@ -163,12 +163,12 @@ class SequenceUnitTest: XCTestCase {
         
         //序列的多次for in循环不能保证循环迭代或者重头开始，存在可消耗序列
         let numberedStdIn = randomNumber.enumerated()
-        var result1: [UInt32] = []
+        var result1: [Int] = []
         for (_, line) in numberedStdIn {
             result1.append(line)
         }
 
-        var result2: [UInt32] = []
+        var result2: [Int] = []
         for (_, line) in numberedStdIn {
             result2.append(line)
         }
