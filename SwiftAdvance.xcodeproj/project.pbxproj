@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1842E53420B5CF3D0063375D /* StructAndClassUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842E53320B5CF3D0063375D /* StructAndClassUnitTest.swift */; };
 		E404B5E420061AA40058AC54 /* SetUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E404B5E320061AA40058AC54 /* SetUnitTest.swift */; };
 		E41DDF331F6CFCA500D8AE4D /* ProtocolOriented.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41DDF321F6CFCA500D8AE4D /* ProtocolOriented.swift */; };
 		E42E0EFB2069E16C005CF5B1 /* DispatchTimeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42E0EFA2069E16C005CF5B1 /* DispatchTimeEx.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1842E53320B5CF3D0063375D /* StructAndClassUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructAndClassUnitTest.swift; sourceTree = "<group>"; };
 		E404B5E320061AA40058AC54 /* SetUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUnitTest.swift; sourceTree = "<group>"; };
 		E41DDF321F6CFCA500D8AE4D /* ProtocolOriented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolOriented.swift; sourceTree = "<group>"; };
 		E42E0EFA2069E16C005CF5B1 /* DispatchTimeEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTimeEx.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1884303B20B112F50037488D /* 5结构体和类 */ = {
+			isa = PBXGroup;
+			children = (
+				1842E53320B5CF3D0063375D /* StructAndClassUnitTest.swift */,
+			);
+			path = "5结构体和类";
+			sourceTree = "<group>";
+		};
 		E41DDF311F6CFC7700D8AE4D /* 面向协议编程 */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 		E4868F7F1FFA8A1C00D63D1A /* AdcancedSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1884303B20B112F50037488D /* 5结构体和类 */,
 				E4868F801FFA8A3300D63D1A /* 2内建集合类型 */,
 				E4F45605201F613B00BAA926 /* 3集合类型协议 */,
 				E462A77220301F60004F3067 /* 9泛型 */,
@@ -315,7 +326,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ray;
 				TargetAttributes = {
 					E44DE0BF1F32FCDF0008D95D = {
@@ -380,6 +391,7 @@
 				E404B5E420061AA40058AC54 /* SetUnitTest.swift in Sources */,
 				E42E0EFC2069E190005CF5B1 /* DispatchTimeEx.swift in Sources */,
 				E478395F1FFB935B002F14EC /* DictionaryUnitTest.swift in Sources */,
+				1842E53420B5CF3D0063375D /* StructAndClassUnitTest.swift in Sources */,
 				E4B340AE203E962C00896348 /* IndexSearch.swift in Sources */,
 				E4359CB520308EFD0055B9E8 /* BinarySearch.swift in Sources */,
 				E4359CB3203088330055B9E8 /* CollectionGenericUnitTest.swift in Sources */,
@@ -425,6 +437,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -432,6 +445,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -482,6 +496,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -489,6 +504,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -48,8 +48,8 @@ extension MutableCollection where Self: RandomAccessCollection {
         let beforeEndIndex = index(before: endIndex)
         while i < beforeEndIndex {
             let dist = distance(from: i, to: endIndex)
-            let randomDistance = IndexDistance.arc4random_uniform(dist)
-            let j = index(i, offsetBy: randomDistance)
+            let randomDistance = arc4random_uniform(UInt32(dist))
+            let j = index(i, offsetBy: Int(randomDistance))
             guard i != j else { continue }
             swapAt(i, j)
             formIndex(after: &i)

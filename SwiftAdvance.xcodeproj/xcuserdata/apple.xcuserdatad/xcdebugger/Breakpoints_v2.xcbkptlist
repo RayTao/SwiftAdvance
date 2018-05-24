@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAdvanceUnitTest/AdcancedSwift/9&#x6cdb;&#x578b;/FisherYates.swift"
+            timestampString = "548520953.25047"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "shuffle()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAdvanceUnitTest/AdcancedSwift/5&#x7ed3;&#x6784;&#x4f53;&#x548c;&#x7c7b;/StructAndClassUnitTest.swift"
+            timestampString = "548873714.626979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "testScan()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftAdvanceUnitTest.StructAndClassUnitTest.testScan() -&gt; ()"
+                  moduleName = "SwiftAdvanceUnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Develop/LearnCode/SwiftAdvance/SwiftAdvanceUnitTest/AdcancedSwift/5%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E7%B1%BB/StructAndClassUnitTest.swift"
+                  timestampString = "548822286.315992"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "2910">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 : @autoclosure () throws -&gt; Swift.Bool in SwiftAdvanceUnitTest.StructAndClassUnitTest.testScan() -&gt; ()"
+                  moduleName = "SwiftAdvanceUnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Develop/LearnCode/SwiftAdvance/SwiftAdvanceUnitTest/AdcancedSwift/5%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E7%B1%BB/StructAndClassUnitTest.swift"
+                  timestampString = "548822286.318543"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAdvanceUnitTest/AdcancedSwift/5&#x7ed3;&#x6784;&#x4f53;&#x548c;&#x7c7b;/StructAndClassUnitTest.swift"
+            timestampString = "548873714.627375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "testScan()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftAdvanceUnitTest.StructAndClassUnitTest.testScan() -&gt; ()"
+                  moduleName = "SwiftAdvanceUnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Develop/LearnCode/SwiftAdvance/SwiftAdvanceUnitTest/AdcancedSwift/5%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E7%B1%BB/StructAndClassUnitTest.swift"
+                  timestampString = "548822169.66554"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "820">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Bool in SwiftAdvanceUnitTest.StructAndClassUnitTest.testScan() -&gt; ()"
+                  moduleName = "SwiftAdvanceUnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Develop/LearnCode/SwiftAdvance/SwiftAdvanceUnitTest/AdcancedSwift/5%E7%BB%93%E6%9E%84%E4%BD%93%E5%92%8C%E7%B1%BB/StructAndClassUnitTest.swift"
+                  timestampString = "548822169.668309"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAdvanceUnitTest/AdcancedSwift/5&#x7ed3;&#x6784;&#x4f53;&#x548c;&#x7c7b;/StructAndClassUnitTest.swift"
+            timestampString = "548873714.627658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "testScan()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAdvanceUnitTest/AdcancedSwift/5&#x7ed3;&#x6784;&#x4f53;&#x548c;&#x7c7b;/StructAndClassUnitTest.swift"
+            timestampString = "548873714.627932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "scanRemainingBytes(scanner:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftAdvanceUnitTest/AdcancedSwift/5&#x7ed3;&#x6784;&#x4f53;&#x548c;&#x7c7b;/StructAndClassUnitTest.swift"
+            timestampString = "548873714.628216"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "scanByte()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
